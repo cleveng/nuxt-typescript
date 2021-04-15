@@ -1,0 +1,39 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env"
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-jsx",
+    "@vue/cli-plugin-babel/preset",
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    ["@vue/babel-preset-jsx",
+      {
+        "injectH": false
+      }]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": [
+              "."
+            ],
+            "alias": {
+              "@": ".",
+              "~": "."
+            }
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@for $i from 0 through 9 {
+  .opacity-#{$i*10},.opacity-#{$i} {
+    opacity: $i * 0.1 !important;
+  }
+}
+
+.opacity {
+  opacity: .5 !important;
+}
+
+.opacity-lg {
+  opacity: .7 !important;
+}
+
+.opacity-default {
+  opacity: 1 !important;
+}
+
+.opacity-default--hover:hover {
+  opacity: 1 !important;
+}

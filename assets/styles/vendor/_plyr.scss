@@ -1,0 +1,38 @@
+.__plyr {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 2001;
+  max-width: 250px;
+
+  .__plyr__video {
+    display: inline-block;
+    width: $btn-video-size;
+    height: $btn-video-size;
+    transition: $btn-video-transition;
+    border-radius: 50%;
+    background-color: $btn-video-bg;
+    color: $btn-video-color;
+    text-align: center;
+    line-height: $btn-video-size;
+    box-shadow: $btn-video-box-shadow;
+    vertical-align: middle;
+
+    &::before {
+      font: {
+        family: 'cartzilla-icons';
+        size: $btn-video-font-size;
+        weight: 700;
+      }
+
+      content: '\e969';
+    }
+
+    // hover state
+    &:hover {
+      background-color: $btn-video-hover-bg;
+      color: $btn-video-hover-color;
+      box-shadow: $btn-video-hover-box-shadow;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+/* ------------------------------------
+  Navs
+------------------------------------ */
+$b-tab-active-color: #377dff;
+.nav-classic {
+  border-bottom: 1px solid #e7eaf3;
+}
+
+.nav-classic .nav-link {
+  color: #77838f;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+  margin-bottom: -.125rem;
+  transition: 0.3s;
+}
+
+.nav-classic .nav-link:hover {
+  color: $b-tab-active-color;
+}
+
+.nav-classic .nav-link.active {
+  color: $b-tab-active-color;
+  border-bottom-color: $b-tab-active-color;
+}
+
+.nav-borderless {
+  border-color: transparent;
+}
+
+.nav-rounded {
+  border-radius: 0.25rem;
+}
+
+.nav-rounded .nav-item:first-child .nav-link {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.nav-rounded .nav-item:last-child .nav-link {
+  border-bottom-right-radius: 0.25rem;
+}
+
+.nav-shadow {
+  box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+}
+
+.nav .nav-item:not(:first-child) {
+  margin-left: .25rem;
+}
+
+.nav .nav-item:not(:last-child) {
+  margin-right: .25rem;
+}
+
+/* Nav Steps */
+.nav-icon .nav-item {
+  color: #77838f;
+}
+
+.nav-icon .nav-item.active {
+  color: $b-tab-active-color;
+}
+
+.nav-icon .nav-item.active .nav-icon-action {
+  color: #fff;
+  background-color: $b-tab-active-color;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.nav-icon-action {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 1;
+  line-height: 0.7;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.375rem;
+  color: #77838f;
+  background-color: rgba(119, 131, 143, 0.1);
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: .5rem;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.nav-icon-action-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.b-tabs-close {
+  position: absolute;
+  right: 0;
+  top: 0.9rem;
+
+  &:hover {
+    i {
+      color: $b-tab-active-color;
+    }
+  }
+}
+
+.b-tabs-login-content {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 2rem 0 1rem !important;
+}
+
+.btn-outline-input {
+  color: #9199a1;
+  border-color: #e3e6f0;
+  border-right: 0;
+}
+
+.img-captcha {
+  width: 132px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  border-color: #e3e6f0;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+}

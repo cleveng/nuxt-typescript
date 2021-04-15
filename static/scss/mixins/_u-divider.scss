@@ -1,0 +1,59 @@
+/* ------------------------------------
+  Divider
+------------------------------------ */
+.u-divider {
+  position: relative;
+  display: inline-block;
+}
+
+.u-divider::before, .u-divider::after {
+  position: absolute;
+  top: 50%;
+  background-color: #d4d7dd;
+  content: "";
+}
+
+.u-divider::before {
+  right: 100%;
+}
+
+.u-divider::after {
+  left: 100%;
+}
+
+.u-divider-wrapper {
+  overflow: hidden;
+}
+
+/* ------------------------------------
+  Divider Sizes
+------------------------------------ */
+
+/* Extra Small */
+.u-divider--xs {
+  font-size: 0.75rem;
+}
+
+.u-divider--xs::before, .u-divider--xs::after {
+  width: 999px;
+  height: 0.0625rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.u-divider--xs::before {
+  margin-right: .625rem;
+}
+
+.u-divider--xs::after {
+  margin-left: .625rem;
+}
+
+/* ------------------------------------
+  Divider Styles
+------------------------------------ */
+
+/* Text */
+.u-divider--text {
+  color: #8c98a4;
+}

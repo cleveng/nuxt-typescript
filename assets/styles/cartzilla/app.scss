@@ -1,0 +1,25 @@
+@import 'variables';
+
+/* === SCSS Compass Functions === */
+
+/* === Boostrap Main SCSS === */
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+@import 'theme/helpers';
+@import 'theme/reboot';
+@import 'theme/components';
+@import 'theme/utilities';
+
+@import '../vendor/nuxt';
+
+
+@import 'icons';
+
+@import 'layout';
+
+@import '../vendor/plyr';
+
+
+.cursor-pointer {
+  cursor: pointer;
+}

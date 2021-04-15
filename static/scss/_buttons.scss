@@ -1,0 +1,204 @@
+/* ------------------------------------
+  Custom Buttons
+------------------------------------ */
+
+//
+//@each $color, $value in $theme-colors {
+//  .btn-outline-#{$color} {
+//    @include button-outline-variant($value);
+//  }
+//}
+//@if $enable-shadows {
+//  @include box-shadow($btn-box-shadow, 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5));
+//} @else {
+//  // Avoid using mixin so we can pass custom focus shadow properly
+//  box-shadow: 0 0 0 $btn-focus-width rgba(mix(color-yiq($background), $border, 15%), .5);
+//}
+
+.btn-white {
+  color: #1e2022;
+  background-color: #fff;
+  border-color: #fff;
+  &:hover{
+    color: #1e2022;
+    background-color: #ececec;
+    border-color: #e6e6e6;
+  }
+  &:focus,&.focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  }
+  &.disabled,&:disabled{
+    color: #1e2022;
+    background-color: #fff;
+    border-color: #fff;
+  }
+}
+
+.btn-white:not(:disabled):not(.disabled):active, .btn-white:not(:disabled):not(.disabled).active,
+.show > .btn-white.dropdown-toggle {
+  color: #1e2022;
+  background-color: #e6e6e6;
+  border-color: #dfdfdf;
+}
+
+.btn-white:not(:disabled):not(.disabled):active:focus, .btn-white:not(:disabled):not(.disabled).active:focus,
+.show > .btn-white.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+/* primary button :hover, :focus, :active effects */
+.btn-primary[href]:hover, .btn-primary[href]:focus, .btn-primary[href]:active, .btn-primary[type]:hover, .btn-primary[type]:focus, .btn-primary[type]:active {
+  box-shadow: 0 4px 11px rgba(55, 125, 255, 0.35);
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color}:not([href]),
+  .btn-#{$color}:not([href]):not([href]):not(:disabled):not(.disabled){
+    background-color: $value;
+    border-color: $value;
+  }
+  .btn-#{$color}[href]:hover,
+  .btn-#{$color}[href]:focus,
+  .btn-#{$color}[href]:active,
+  .btn-#{$color}[type]:hover,
+  .btn-#{$color}[type]:focus,
+  .btn-#{$color}[type]:active {
+    box-shadow: 0 4px 11px rgba($value, 0.35);
+  }
+  .btn-soft-#{$color} {
+    color: $value;
+    background: rgba($value, .1);
+    border-color: transparent;
+  }
+  .btn-soft-#{$color}[href]:hover,
+  .btn-soft-#{$color}[href]:focus,
+  .btn-soft-#{$color}[href]:active,
+  .btn-soft-#{$color}[href].active,
+  .btn-soft-#{$color}[type]:hover,
+  .btn-soft-#{$color}[type]:focus,
+  .btn-soft-#{$color}[type]:active,
+  .btn-soft-#{$color}[type].active {
+    color: $white;
+    background: $value;
+    box-shadow: 0 4px 11px rgba($value, 0.35);
+  }
+  .btn-soft-#{$color}[href].disabled,
+  .btn-soft-#{$color}[href]:disabled,
+  .btn-soft-#{$color}[type].disabled,
+  .btn-soft-#{$color}[type]:disabled {
+    color: $value;
+    background-color: rgba($value, 0.1);
+    box-shadow: none;
+  }
+}
+
+@each $color, $value in $social-colors {
+  .btn-#{$color}:not([href]),
+  .btn-#{$color}:not([href]):not([href]):not(:disabled):not(.disabled){
+    background-color: $value;
+    border-color: $value;
+  }
+  .btn-#{$color}[href]:hover,
+  .btn-#{$color}[href]:focus,
+  .btn-#{$color}[href]:active,
+  .btn-#{$color}[type]:hover,
+  .btn-#{$color}[type]:focus,
+  .btn-#{$color}[type]:active {
+    box-shadow: 0 4px 11px rgba($value, 0.35);
+  }
+  .btn-soft-#{$color}[href]:hover,
+  .btn-soft-#{$color}[href]:focus,
+  .btn-soft-#{$color}[href]:active,
+  .btn-soft-#{$color}[href].active,
+  .btn-soft-#{$color}[type]:hover,
+  .btn-soft-#{$color}[type]:focus,
+  .btn-soft-#{$color}[type]:active,
+  .btn-soft-#{$color}[type].active {
+    color: $white;
+    background: $value;
+    box-shadow: 0 4px 11px rgba($value, 0.35);
+  }
+  .btn-soft-#{$color}[href].disabled,
+  .btn-soft-#{$color}[href]:disabled,
+  .btn-soft-#{$color}[type].disabled,
+  .btn-soft-#{$color}[type]:disabled {
+    color: $value;
+    background-color: rgba($value, 0.1);
+    box-shadow: none;
+  }
+  .text-#{$color}{
+    color: $value;
+  }
+}
+
+
+
+/* ------------------------------------
+  Custom Button Toggle
+------------------------------------ */
+.btn-custom-toggle-primary {
+  color: #8c98a4;
+  border-color: #d5dae2;
+}
+
+.btn-custom-toggle-primary:hover {
+  color: #377dff;
+  background-color: transparent;
+  border-color: #377dff;
+}
+
+.btn-custom-toggle-primary:not(:disabled):not(.disabled):active, .btn-custom-toggle-primary:not(:disabled):not(.disabled).active, .btn-custom-toggle-primary:not(:disabled):not(.disabled):active, .btn-custom-toggle-primary:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #377dff;
+  border-color: #377dff;
+}
+
+.btn-custom-toggle-white:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-custom-toggle-white:not(:disabled):not(.disabled):active, .btn-custom-toggle-white:not(:disabled):not(.disabled).active, .btn-custom-toggle-white:not(:disabled):not(.disabled):active, .btn-custom-toggle-white:not(:disabled):not(.disabled).active {
+  color: #377dff;
+}
+
+
+/* ------------------------------------
+  Button Sizes
+------------------------------------ */
+
+/* Wide */
+.btn-wide {
+  min-width: 10rem;
+}
+
+.btn-sm-wide,.btn-wide-sm {
+  min-width: 8.4375rem;
+}
+
+/* Extra Small */
+.btn-xs {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  padding: 0.4375rem 0.9375rem;
+}
+
+/* Icons */
+.btn-icon.btn-xs {
+  font-size: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn-icon.btn-sm, .btn-group-sm > .btn-icon.btn {
+  font-size: 0.8175rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.btn-icon.btn-lg, .btn-group-lg > .btn-icon.btn {
+  font-size: 1.75rem;
+  width: 5rem;
+  height: 5rem;
+}
+

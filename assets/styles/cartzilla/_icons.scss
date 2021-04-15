@@ -1,0 +1,242 @@
+//$mdi-font-path: "/fonts";
+$mdi-font-path: 'https://fonts.cakioe.com/mdi';
+@import '../../../node_modules/@mdi/font/scss/materialdesignicons';
+//i.mdi{
+//  line-height: 100% !important;
+//}
+
+
+//carousel
+//
+// Carousel
+// Based on https://github.com/ganlanyuan/tiny-slider
+// --------------------------------------------------
+.tns-outer .tns-nav {
+  padding-top: .875rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+.tns-outer [data-nav] {
+  display: inline-block;
+  width: .3125rem;
+  height: .3125rem;
+  margin: 0 .375rem;
+  padding: 0;
+  transition: width .2s ease-in-out, background-color .2s ease-in-out;
+  border: 0;
+  border-radius: .15625rem;
+  background-color: #b6bcc5;
+}
+
+.tns-outer [data-nav].tns-nav-active {
+  width: 1.25rem;
+  background-color: #fe696a;
+}
+
+
+//
+.popup_content {
+  padding: 50px;
+  text-align: center;
+}
+
+.heading_s4 {
+  margin-bottom: 15px;
+}
+
+.heading_s4 h1, .heading_s4 h2, .heading_s4 h3, .heading_s4 h4, .heading_s4 h5, .heading_s4 h6 {
+  font-weight: 700;
+  margin: 0;
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+.popup_content p {
+  color: #687188;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.btn-fill-line {
+  background-color: transparent;
+  border: 1px solid #333;
+  overflow: hidden;
+  position: relative;
+  color: #fff !important;
+  transition: all 0.8s ease 0s;
+  z-index: 1;
+}
+
+.btn-fill-line::before, .btn-fill-line::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #333;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  width: 50%;
+}
+
+.btn-fill-line::after {
+  right: 0;
+  left: auto;
+}
+
+.subscribe_popup .close {
+  //&:hover{
+  //  color: white;
+  //  background-color: rgba(0,0,0,.3);
+  //}
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  opacity: 1;
+  text-shadow: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+$modal-backdrop-opacity: 0.25;
+.modal-backdrop {
+  opacity: .5;
+}
+
+
+//
+.shop_banner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.banner_img {
+  position: relative;
+}
+
+[class*='overlay_bg_']::before {
+  background-color: #000;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.overlay_bg_20::before, .overlay_bg_default_20::before, .overlay_bg_blue_20::before, .overlay_bg_white_20::before {
+  opacity: 0.2;
+}
+
+.shop_bn_content2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.shop_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-white {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #292b2c !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-white::before, .btn-white::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  width: 50%;
+}
+
+.btn-white::after {
+  right: 0;
+  left: auto;
+}
+
+.text_white * {
+  color: #fff;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.btn-white:hover::before, .btn-white:hover::after {
+  width: 0;
+}
+
+.btn-white:hover {
+  color: #fff !important;
+}
+
+
+//矫正数据
+.navbar-tool-icon-box {
+  line-height: 2.875rem !important;
+
+  .b-icon.bi {
+    vertical-align: middle !important;
+  }
+}
+
+
+//
+.collection a {
+  display: block;
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+
+  &::before {
+    border-bottom: 2px solid #fe696a;
+    border-top: 2px solid #fe696a;
+    margin: 0 -5px;
+    transform: scaleX(0);
+  }
+
+  &::after {
+    border-left: 2px solid #fe696a;
+    border-right: 2px solid #fe696a;
+    margin: -5px 0;
+    transform: scaleY(0);
+  }
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .3s ease-in;
+  }
+
+  &:hover::after, &:hover::before {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,440 @@
+$primary: #1fde82;
+$success: #21c87a;
+$dark: #38414a;
+$blue: #1c6be1;
+$gray-dark: #343a40;
+$gray: #8c98a4;
+$white: #fff;
+$cyan: #17a2b8;
+$teal: #20c997;
+$green: #28a745;
+$yellow: #ffc107;
+$orange: #fd7e14;
+$red: #dc3545;
+$pink: #e83e8c;
+$purple: #796eff;
+$indigo: #6610f2;
+
+$theme-colors: (
+  primary: #21c87a,
+  secondary: #77838f,
+  light: #f5f8fb,
+  dark: $dark,
+  info: #377dff,
+  success: $success,
+  warning: #ffbc42,
+  danger: #da4b48,
+  gray : #f8fafd,
+  purple: #796eff,
+  pink: #e83e8c,
+  white: white,
+  indigo: #6610f2,
+  dark-soft: rgba(21, 27, 38, 0.4),
+  white-soft: rgba(255, 255, 255, 0.1),
+  primary-soft: rgba(33, 200, 122, 0.1),
+  gray-700: #646f79,
+  white-700: rgba(255, 255, 255, 0.7),
+);
+
+$social-colors: (
+  facebook: #3b5998,
+  google: #d14130,
+  twitter: #1da1f2,
+  instagram: #3f729b,
+  github: #24292e,
+  pinterest: #FC0D1B,
+  google-plus: #DD4B39,
+);
+
+$container-max-widths: (sm: 540px, md: 720px, lg: 980px, xl: 1200px);
+
+$yiq-text-dark: #888;
+$yiq-contrasted-threshold: 200;
+
+$md-family: "Material Design Icons";
+$ui-family: "Calibri", "Helvetica Neue", helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", arial, sans-serif, $md-family;
+
+
+// Body
+$body-bg: $white;
+$body-color: #212529;
+$body-color-inverse: invert($body-color);
+$text-muted: #9A9A9A;
+
+$action-transition-duration: .35s;
+$action-transition-timing-function: ease-in-out;
+
+$preloader-z-index: 9999;
+$rd-navbar-z-index: 999;
+
+// border
+$border-color: #ebedf2;
+
+$text-body: #000;
+
+$exa: exa;
+$navbar-height: 80px;
+$navbar-font-size: 0.875rem;
+
+$left-menu-width: 256px;
+$sidebar-width-lg: 256px;
+$sidebar-width-icon: 64px;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px` 14px
+$font-size-xl: ($font-size-base * 1.625);
+$font-size-lg: $font-size-base * 1.25;
+$font-size-md: ($font-size-base * .9375);
+$font-size-sm: $font-size-base * .875;
+$font-size-ms: ($font-size-base * .8125);
+$font-size-xs: ($font-size-base * .75);
+$font-sizes: ();
+$font-sizes: map-merge(
+    (
+      "xl": $font-size-xl,
+      "lg": $font-size-lg,
+      "base": $font-size-base,
+      "md": $font-size-md,
+      "sm": $font-size-sm,
+      "ms": $font-size-ms,
+      "xs": $font-size-xs
+    ),
+    $font-sizes
+);
+
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+    (
+      0: 0,
+      1: ($spacer * .25),
+      2: ($spacer * .5),
+      3: $spacer,
+      4: ($spacer * 1.5),
+      5: ($spacer * 2),
+      6: ($spacer * 2.5),
+      7: ($spacer * 3),
+      8: ($spacer * 3.5),
+      9: ($spacer * 4),
+    ),
+    $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ();
+$sizes: map-merge(
+    (
+      5: 5%,
+      10: 10%,
+      15: 15%,
+      20: 20%,
+      25: 25%,
+      30: 30%,
+      35: 35%,
+      40: 40%,
+      45: 45%,
+      50: 50%,
+      55: 55%,
+      60: 60%,
+      65: 65%,
+      70: 70%,
+      75: 75%,
+      80: 80%,
+      85: 85%,
+      90: 90%,
+      95: 95%,
+      100: 100%,
+      auto: auto
+    ),
+    $sizes
+);
+
+
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+
+// lead
+$lead-font-weight: 400;
+
+// Links
+$link-color: #666;
+$link-hover-decoration: none;
+$link-hover-color: $primary;
+
+// breadcrumb
+$breadcrumb-bg: transparent;
+$breadcrumb-font-size: $font-size-base;
+$breadcrumb-active-color: $primary;
+
+
+// Components
+
+$border-radius: .25rem;
+$border-radius-lg: .3rem;
+$border-radius-sm: .125rem;
+
+$box-shadow-sm: 0 0 2.1875rem rgba(140, 152, 164, 0.125);
+$box-shadow: 0 0 2.1875rem rgba(140, 152, 164, 0.25);
+$box-shadow-lg: 0 0.625rem 2.5rem 0.625rem rgba(140, 152, 164, 0.175);
+
+
+// Fonts
+
+$font-family-base: $ui-family;
+$display-font-family: $font-family-base;
+$headings-font-family: $font-family-base;
+
+$line-height-base: 1.7;
+$headings-line-height: 1.5em;
+$headings-color: inherit;
+$font-weight-normal: 400;
+$headings-font-weight: 500;
+$headings-margin-bottom: 0.5 * $font-size-base;
+
+$lead-font-size: 1.30rem;
+$small-font-size: 80%;
+
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+$display1-size: 6 * $font-size-base;
+$display2-size: 5.5 * $font-size-base;
+$display3-size: 4.5 * $font-size-base;
+$display4-size: 3.5 * $font-size-base;
+
+// navbar
+$navbar-brand-padding-y: 0.5rem;
+$navbar-padding-x: 1rem;
+$navbar-brand-font-size: $font-size-base;
+$navbar-toggler-font-size: $font-size-base;
+
+
+// Buttons padding: 0.75rem 1rem;
+$btn-padding-y: 0.75 * $font-size-base;
+$btn-padding-x: 1 * $font-size-base;
+$btn-font-size: $font-size-base;
+$btn-line-height: 1.7;
+$btn-font-weight: 500;
+$btn-border-radius: 0.25rem;
+$btn-border-width: 1px;
+$btn-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .2);
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-font-family: $ui-family;
+$btn-padding-y-xs: 0.4688rem;
+$btn-padding-x-xs: 0.9375rem;
+$btn-font-size-xs: 0.6875rem;
+$btn-line-height-xs: 1;
+$btn-border-radius-xs: 0.25rem;
+//
+$btn-padding-y-sm: 0.5625rem;
+$btn-padding-x-sm: 1.125rem;
+$btn-font-size-sm: 1rem;
+$btn-line-height-sm: 1.5;
+$btn-border-radius-sm: 0.3rem;
+
+
+$line-height-lg: 1.7;
+
+// Forms
+$input-height-lg: calc(1.7em + 2.25rem + 2px);
+$input-height: calc(1.7em + 1.5rem + 2px);
+$input-height-sm: calc(1.5em + 1.125rem + 2px);
+
+$input-padding-y-lg: 0.5625rem;
+$input-padding-x-lg: 1.125rem;
+
+$input-font-size: $font-size-base;
+
+$input-padding-y: 0.35rem;
+$input-padding-x: 1rem;
+$input-font-weight: 400;
+
+$input-btn-line-height-sm: 1.5;
+$input-btn-line-height: 1.7;
+$input-btn-line-height-lg: 1.7;
+
+$input-line-height: 1.7;
+
+$input-btn-padding-x: 1.3rem;
+$input-btn-padding-y: .55rem;
+
+$input-btn-padding-x-sm: 1.125rem;
+$input-btn-padding-x-lg: 3rem;
+
+$input-btn-padding-y-sm: 0.5625rem;
+$input-btn-padding-y-lg: 0.95rem;
+
+$input-color: #151b26;
+$input-border-width: 1px;
+$input-border-color: #e3e6f0;
+$input-bg: white;
+$input-group-addon-bg: $input-bg;
+$input-group-addon-color: transparentize($body-color, .2);
+$input-placeholder-color: transparentize($body-color, .75);
+$input-box-shadow: none;
+$input-focus-bg: white;
+
+$input-height-inner: ($input-font-size * $line-height-base) + ($input-btn-padding-y * 2);
+$input-focus-box-shadow: none;
+$input-border-radius: $border-radius;
+$input-border-radius-lg: $border-radius-lg;
+$input-border-radius-sm: $border-radius-sm;
+
+$custom-control-indicator-bg: transparent;
+$custom-control-indicator-checked-bg: transparent;
+$custom-control-indicator-checked-disabled-bg: transparent;
+$custom-control-indicator-disabled-bg: transparent;
+$custom-control-indicator-active-bg: transparent;
+$custom-control-indicator-focus-box-shadow: none;
+$custom-control-indicator-checked-color: #555;
+
+//$custom-checkbox-indicator-indeterminate-bg: transparent;
+//$custom-checkbox-indicator-icon-checked: none;
+//$custom-radio-indicator-icon-checked: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='2' fill='#{$custom-control-indicator-checked-color}'/%3E%3C/svg%3E");
+
+// list
+$list-group-item-padding-y: 0.35 * $font-size-base;
+$list-group-item-padding-x: 1.25 * $font-size-base;
+$list-group-border-width: 1px;
+$list-group-border-color: #e3e6f0;
+
+
+// Cards
+$card-border-width: 0;  // 不使用border
+$card-border-radius: $font-size-base * 0.25;
+$card-border-color: #e7eaf3;
+$card-spacer-x: 1.5rem;
+$card-spacer-y: 1rem;
+$card-cap-bg: $white;
+$card-inner-border-radius: 0.25rem;
+$card-img-overlay-padding: 1.25rem;
+$card-deck-margin: 15px;
+$card-group-margin: 15px;
+$card-columns-margin: 1rem;
+$card-columns-count: 3;
+$card-columns-gap: 1rem;
+
+// Dropdowns
+
+//$dropdown-item-padding-y: 0.5rem;
+$dropdown-item-padding-y: 0;
+$dropdown-header-color: transparentize($body-color, .75);
+$dropdown-font-size: 0.875 * $font-size-base;
+$dropdown-padding-y: 1rem;
+$dropdown-border-width: 0;
+$dropdown-border-color: rgba(0, 0, 0, 0.15);
+$dropdown-box-shadow: 0 5px 9px rgba(119, 131, 143, 0.075);
+
+// Alerts
+$alert-border-width: 1px;
+$alert-padding-y: 1.5rem;
+$alert-padding-x: 1.5rem;
+$alert-border-color: #f7f8f8;
+$alert-box-shadow: 0 5px 9px rgba(55, 125, 255, 0.075), 0 5px 9px rgba(119, 131, 143, 0.075);
+
+
+// Navs
+
+$nav-link-padding-x: 1.4rem;
+$nav-link-padding-y: .7rem;
+$nav-pills-border-radius: $font-size-base * $line-height-base * 2;
+$nav-tabs-border-width: 0;
+
+
+// Navbar
+
+$navbar-brand-font-size: 0.85 * $font-size-base;
+$navbar-dark-color: white;
+$navbar-dark-hover-color: white;
+
+$navbar-padding-y: 9px;
+$navbar-nav-link-padding-x: .65rem;
+
+// Pagination
+$pagination-border-width: 0;
+$pagination-padding-y: 0.5rem;
+$pagination-padding-x: 0.75rem;
+$pagination-line-height: 1.25;
+$pagination-color: #646f79;
+$pagination-bg: $white;
+$pagination-border-color: #e3e6f0;
+$pagination-hover-bg: rgba(33, 200, 122, 0.1);
+$pagination-hover-color: $primary;
+$pagination-active-color: $white;
+$pagination-active-bg: $primary;
+$pagination-active-border-color: $primary;
+$pagination-disabled-color: #8c98a4;
+$pagination-disabled-bg: $white;
+$pagination-disabled-border-color: #e3e6f0;
+$pagination-focus-outline: 0;
+$pagination-focus-box-shadow: 0 0 0 0.2rem rgba(33, 200, 122, 0.25);
+
+
+// Tooltips
+
+//$tooltip-bg: #FFFFFF;
+$tooltip-padding-x: 1rem;
+$tooltip-max-width: 170px;
+
+
+// Popovers
+
+$popover-bg: #f7f7f7;
+$popover-body-color: white;
+$popover-max-width: 240px;
+$popover-border-width: 0;
+$popover-box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+$popover-header-bg: $popover-bg;
+$popover-header-color: rgba(white, .6);
+
+
+// Badges
+
+$badge-font-size: 0.7142em;
+$badge-font-weight: 700;
+$badge-pill-padding-x: .5rem;
+
+
+// Modals
+$zindex-modal-backdrop: 1001;
+$modal-content-border-width: 0;
+$modal-inner-padding: 1.2rem;
+$modal-header-padding: 1.2rem;
+$modal-backdrop-opacity: 0.25;
+$modal-sm: 255px;
+
+$label-margin-bottom: 0;
+
+// dropdown
+$dropdown-link-active-color: #16181b;
+$dropdown-link-active-bg: #f6f9fc;
+
+// Progress bars
+$progress-height: 1px;
+
+// position
+$zindex-fixed2: 999;
+
+
+// z-index
+$z-index-100: 100;
+
+// opacity
+$opacity-half: .5;
+$opacity-1: 1;
+
+p {
+  color: #646f79;
+}
+
+button, a {
+  &.disabled, &:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+  }
+}

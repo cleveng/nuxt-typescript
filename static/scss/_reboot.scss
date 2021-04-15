@@ -1,0 +1,131 @@
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+  position: relative;
+}
+
+//body{
+//  @include font-size($font-size-sm);
+//}
+
+figure {
+  margin-bottom: 0;
+}
+
+.footer{
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/2c4ad30a.svg")  no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    opacity: 0.03;
+  }
+  h4{
+    color: #5f6464;
+    font-weight: normal;
+  }
+
+}
+
+
+.svg-curve{
+  max-width: 100%;
+  width:100%;
+  height:140px;
+  margin-bottom: -8px;
+}
+
+
+/* ------------------------------------
+  Vertical Divider
+------------------------------------ */
+.u-ver-divider {
+  position: relative;
+}
+
+.u-ver-divider::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-right: 1px solid #e7eaf3;
+  content: "";
+}
+
+/* Breakpoint */
+@media (max-width: 575.98px) {
+  .u-ver-divider--none-sm::after {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .u-ver-divider--none-md::after {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .u-ver-divider--none-lg::after {
+    display: none;
+  }
+}
+
+/* ------------------------------------
+  Divider Sizes
+------------------------------------ */
+
+/* Extra Small */
+.u-ver-divider--xs::after {
+  top: 50%;
+  height: 1rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Small */
+.u-ver-divider--sm::after {
+  top: 50%;
+  height: 2rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Large */
+.u-ver-divider--lg::after {
+  top: 50%;
+  height: 3rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Extra Large */
+.u-ver-divider--xl::after {
+  top: 50%;
+  height: 4rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.va-middle{
+  .table {
+    td{
+      vertical-align: middle !important;
+    }
+  }
+  p{
+    margin-bottom: 0;
+  }
+}

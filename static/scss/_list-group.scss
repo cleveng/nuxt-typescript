@@ -1,0 +1,55 @@
+/* Border Radius */
+.list-group {
+  list-style: none;
+}
+
+.list-group-rounded-0 .list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.list-group-rounded-0 .list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Transparent */
+.list-group-transparent .list-group-item {
+  //color: #fff;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.list-group-transparent .list-group-item[href] {
+  //color: rgba(255, 255, 255, 0.7);
+}
+
+.list-group-transparent .list-group-item[href]:hover {
+  color: $primary;
+}
+
+.list-group-transparent.list-group-striped .list-group-item:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Flush */
+.list-group-flush .list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list-group-flush .list-group-item.active {
+  color: $primary;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Borderless */
+.list-group-borderless .list-group-item {
+  border: none;
+}
+
+/* Striped */
+.list-group-striped .list-group-item:nth-child(even) {
+  background-color: #f5f8fb;
+}

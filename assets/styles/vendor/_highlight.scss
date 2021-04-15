@@ -1,0 +1,38 @@
+.lang {
+  &-toolbar {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .toolbar-label {
+      font-size: 0.9rem;
+      margin-right: 1rem;
+    }
+
+    .toolbar-icon {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      box-sizing: border-box;
+      border-style: solid;
+      border-color: #e3e6f0;
+      border-width: 1px 0 1px 1px;
+      cursor: pointer;
+      color: #151b26;
+
+      &:hover {
+        border-color: #151b26;
+        border-width: 1px;
+        color: #e3e6f0;
+        background: #151b26;
+      }
+
+      &:last-child {
+        border-width: 1px;
+      }
+    }
+  }
+}

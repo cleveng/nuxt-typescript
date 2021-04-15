@@ -1,0 +1,26 @@
+/* ------------------------------------
+  Highlight Color
+------------------------------------ */
+::-moz-selection {
+  color: #fff;
+  background-color: #21c87a;
+}
+
+::selection {
+  color: #fff;
+  background-color: #21c87a;
+}
+
+.bg-primary ::-moz-selection {
+  color: #21c87a;
+  background-color: #fff;
+}
+
+.bg-primary ::selection {
+  color: #21c87a;
+  background-color: #fff;
+}
+
+.IE11 .ie-d-block {
+  display: block !important;
+}

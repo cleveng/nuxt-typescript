@@ -1,0 +1,69 @@
+/* ------------------------------------
+  Width
+------------------------------------ */
+$max_sizes: map-merge(
+    (
+      10: ($spacer * 5),
+      12: ($spacer * 6),
+      14: ($spacer * 7),
+      15: ($spacer * 7),
+      18: ($spacer * 9),
+      27: ($spacer * 13),
+      35: ($spacer * 17),
+      40: ($spacer * 19.5),
+    ),
+    $spacers
+);
+
+@each $size, $length in $max_sizes {
+  @if $size >= 3 {
+    .min-width-#{$size}{
+      min-width: $length;
+    }
+    .max-width-#{$size}{
+      max-width: $length;
+      @include media-breakpoint-up(sm) {
+        max-width: $length;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+    .vw-lg-50 {
+        width: 50vw !important;
+    }
+}
+
+/* ------------------------------------
+  Font Weight
+------------------------------------ */
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+/* ------------------------------------
+  Font Style
+------------------------------------ */
+.font-normal {
+    font-style: normal;
+}
+
+/* ------------------------------------
+  Font Family
+------------------------------------ */
+.font-family-charm {
+    font-family: "Charm", cursive !important;
+}
+
+.text-lh-xs {
+    line-height: 1.2 !important;
+}
+
+.text-lh-sm {
+    line-height: 1.4 !important;
+}
+
+.text-lh-md {
+  line-height: 1.8;
+}

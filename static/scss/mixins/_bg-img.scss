@@ -1,0 +1,65 @@
+/* ------------------------------------
+  Background Colors
+------------------------------------ */
+.bg-gray-100 {
+  background-color: #f5f8fb;
+}
+
+.bg-black-opacity-0_3 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bg-purple-opacity-0_07 {
+  background-color: rgba(121, 110, 255, 0.07);
+}
+
+@media (min-width: 992px) {
+  .bg-lg-transparent {
+    background-color: transparent !important;
+  }
+}
+
+/* ------------------------------------
+  Background Image Style
+------------------------------------ */
+.bg-img-hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.bg-img-hero-bottom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.bg-img-hero-center {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ------------------------------------
+  Background Overlay
+------------------------------------ */
+[class*="bg-overlay"] {
+  position: relative;
+  z-index: 1;
+}
+
+[class*="bg-overlay"]::before, [class*="bg-overlay"]::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.bg-overlay-dark-v1::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,31 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+/* === Import template variables === */
+@import "variables";
+
+/* ------------------------------------------------------------------- */
+
+/* === SCSS Compass Functions === */
+// Values for $display are: flex (default), inline-flex
+
+/* === Boostrap Main SCSS === */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "reboot";
+@import "type";
+@import "mixins";
+//@import "custom-forms";
+//@import "forms";
+@import "alert";
+@import "modal";
+@import "buttons";
+@import "list-group";
+@import "navbar";
+@import "../../assets/styles/vendor/nuxt";
+@import "vendor";
+@import "spinners";
+@import "transitions";
+@import "icons";
+@import "utilities";
+@import "console";

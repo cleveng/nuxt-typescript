@@ -1,0 +1,50 @@
+/* ------------------------------------
+  Go To
+------------------------------------ */
+$u-size: 2.5rem;
+.u-chat, .u-go-to {
+  z-index: $z-index-100;
+  width: $u-size;
+  height: $u-size;
+  background-color: $primary;
+  color: $white;
+  font-size: $font-size-base;
+  border-radius: $border-radius;
+  transition: $action-transition-duration $action-transition-timing-function;
+  display: block;
+
+  &:hover, &:focus:hover {
+    color: $white;
+  }
+}
+
+.u-chat {
+  position: fixed;
+  opacity: $opacity-1;
+  right: 30px;
+  bottom: 15px;
+
+  &:hover, &:focus:hover {
+    opacity: $opacity-half;
+  }
+}
+
+.ivu-back-top-show + .u-chat {
+  bottom: calc(16px + #{$u-size}) !important;
+}
+
+.u-go-to {
+  opacity: $opacity-half;
+  position: relative;
+
+  &__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover, &:focus:hover {
+    opacity: $opacity-1;
+  }
+}

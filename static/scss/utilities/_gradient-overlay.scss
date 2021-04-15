@@ -1,0 +1,186 @@
+/* ------------------------------------
+  Background Overlay Gradients
+------------------------------------ */
+[class*="gradient-overlay"],
+[class*="gradient-overlay-half"],
+[class*="gradient-overlay-quarter"] {
+  position: relative;
+  z-index: 1;
+}
+
+[class*="gradient-overlay"]::before,
+[class*="gradient-overlay"]::after,
+[class*="gradient-overlay-half"]::before,
+[class*="gradient-overlay-half"]::after,
+[class*="gradient-overlay-quarter"]::before,
+[class*="gradient-overlay-quarter"]::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.gradient-half-primary-body-v1 {
+  background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 100%);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+.gradient-half-primary-v1 {
+  background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-purple-v1 {
+  background-image: linear-gradient(35deg, #796eff 45%, #1c6be1 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-light-v1 {
+  background-image: linear-gradient(155deg, #f5f8fb 0%, #fff 50%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-primary-v2 {
+  background-image: linear-gradient(0deg, rgba(55, 125, 255, 0.05) 0%, transparent 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-primary-v3 {
+  background-image: linear-gradient(0deg, rgba(55, 125, 255, 0.1) 0%, transparent 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-primary-v4 {
+  background-image: linear-gradient(150deg, #2d1582 0%, #19a0ff 85%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-primary-v5 {
+  background-image: linear-gradient(150deg, #377dff 0%, #2d1582 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-info-v1 {
+  background-image: linear-gradient(0deg, #377dff 0%, #00dffc 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-warning-v1 {
+  background-image: linear-gradient(25deg, #ffc107 30%, #de4437 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-warning-v2 {
+  background-image: linear-gradient(150deg, #ffc107 0%, #efa02e 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-half-warning-v3 {
+  background-image: linear-gradient(150deg, #ffc107 0%, #de4437 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-video-v1::before {
+  z-index: 2;
+  background-color: rgba(21, 27, 38, 0.95);
+}
+
+.gradient-overlay-half-white-v1::before {
+  background-image: linear-gradient(60deg, rgba(255, 255, 255, 0.99) 30%, rgba(255, 255, 255, 0) 60%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-white-v2::before {
+  background-image: linear-gradient(60deg, rgba(255, 255, 255, 0.99) 28%, rgba(255, 255, 255, 0) 50%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-white-v2::after {
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.99) 3%, rgba(255, 255, 255, 0) 50%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-quarter-light-v1::before {
+  background-image: linear-gradient(0deg, #f5f8fb 0%, rgba(255, 255, 255, 0) 25%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v1::before {
+  background-image: linear-gradient(30deg, rgba(21, 27, 38, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v2::before {
+  background-image: linear-gradient(0deg, rgba(21, 27, 38, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v2-2::before {
+  background-image: linear-gradient(0deg, rgba(21, 27, 38, 0.89) 0%, rgba(21, 27, 38, 0.37) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v2-3::before {
+  background-image: linear-gradient(0deg, #151b26 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v3::before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(21, 27, 38, 0.5) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-dark-v4::before {
+  background-image: linear-gradient(150deg, rgba(21, 27, 38, 0.9) 10%, #151b26 50%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-dark-v1::before {
+  background-image: linear-gradient(0deg, #151b26 0%, rgba(0, 0, 0, 0) 150%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-black-v1::before {
+  background-image: linear-gradient(45deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-black-v1::after {
+  background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 25%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-black-v1-2::before {
+  background-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 25%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-black-v1-2::after {
+  background-image: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-black-v2::before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-primary-v1::before {
+  background-image: linear-gradient(30deg, rgba(121, 110, 255, 0.95) 0%, rgba(33, 200, 122, 0.95) 100%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-purple-v1::before {
+  background-image: linear-gradient(180deg, rgba(121, 110, 255, 0.35) 10%, #796eff 70%);
+  background-repeat: repeat-x;
+}
+
+.gradient-overlay-half-purple-v2::before {
+  background-image: linear-gradient(150deg, rgba(121, 110, 255, 0.9) 10%, #796eff 50%);
+  background-repeat: repeat-x;
+}

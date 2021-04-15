@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "nuxt-property-decorator";
-import Logo from "~/components/Logo.vue";
+import { Vue, Component } from 'nuxt-property-decorator'
+import Logo from '~/components/Logo.vue'
 
 @Component({
   components: {
@@ -15,5 +15,8 @@ import Logo from "~/components/Logo.vue";
   }
 })
 export default class Index extends Vue {
+  layout(): string {
+    return 'basic'
+  }
 }
 </script>

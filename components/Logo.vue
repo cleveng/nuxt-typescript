@@ -19,9 +19,7 @@ const stateCount = namespace('modules/count')
 export default class extends Vue {
   message: String = 'hello world'
   @stateCount.State('count') stateCount2
-  mounted() {
-    console.log(this.stateCount2)
-  }
+  mounted() {}
   @stateCount.Mutation('change') change
 
   HandleChange(): void {

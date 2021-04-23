@@ -1,9 +1,0 @@
-/* font-weight */
-$f-w: f-w !default;
-$font-weight-sizes: 100, 200, 300, 400, 500, 600, 700;
-
-@each $i in $font-weight-sizes {
-  .#{$f-w}-#{$i} {
-    font-weight: $i !important;
-  }
-}

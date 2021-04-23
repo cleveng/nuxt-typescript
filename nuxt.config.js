@@ -21,56 +21,56 @@ export default {
   head: {
     title: 'Cakioe' || process.env.npm_package_name,
     meta: [{
-        charset: 'utf-8'
-      },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: ''
-      }
+      charset: 'utf-8'
+    },
+    {
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1'
+    },
+    {
+      hid: 'description',
+      name: 'description',
+      content: ''
+    }
     ],
     link: [{
-        rel: 'icon',
-        type: 'image/png',
-        href: '/favicon.png'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.0/animate.min.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.bootcdn.net/ajax/libs/iview/3.5.5-rc.1/styles/iview.min.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.bootcdn.net/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue.min.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.bootcdn.net/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue-icons.min.css'
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.1/theme-chalk/index.min.css'
-      }
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon.png'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.0/animate.min.css'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn.bootcdn.net/ajax/libs/iview/3.5.5-rc.1/styles/iview.min.css'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn.bootcdn.net/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue.min.css'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn.bootcdn.net/ajax/libs/bootstrap-vue/2.21.2/bootstrap-vue-icons.min.css'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.1/theme-chalk/index.min.css'
+    }
     ],
     script: [{
-        src: 'https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js'
-      },
-      {
-        src: 'https://cdn.bootcdn.net/ajax/libs/device.js/0.2.7/device.min.js'
-      },
-      {
-        src: 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js'
-      },
-      {
-        src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js'
-      }
+      src: 'https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js'
+    },
+    {
+      src: 'https://cdn.bootcdn.net/ajax/libs/device.js/0.2.7/device.min.js'
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js'
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js'
+    }
     ]
   },
 
@@ -80,7 +80,35 @@ export default {
     color: '#3B8070'
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{
+    src: '~plugins/element-ui',
+    ssr: true
+  },
+  {
+    src: '~plugins/bootstrap',
+    ssr: true
+  },
+  {
+    src: '~plugins/vee-validate',
+    ssr: false
+  },
+  {
+    src: '~plugins/clipboard',
+    ssr: false
+  },
+  {
+    src: '~/plugins/vuex-persist',
+    ssr: false
+  },
+  {
+    src: '~/plugins/notyf',
+    ssr: false
+  },
+  {
+    src: '~/plugins/filter',
+    ssr: true
+  }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   // 自动扫描以及导入组件

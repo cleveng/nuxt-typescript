@@ -1,9 +1,16 @@
-[Vue warn]: Invalid component name: "pages/index.vue". 
-Component names should conform to valid custom element name in html5 specification.
+<!--
+ * @Author: Cleveng
+ * @Date: 2021-04-23 08:31:47
+ * @LastEditTime: 2021-04-23 09:43:27
+ * @Description: file header
+-->
+#### 如何使用
 
 
-Stylelint: Unexpected unknown at-rule "@include" (at-rule-no-unknown)
+##### 安装依赖
+`npm i` 或者 `cnpm i `
 
-
-
-[eslint] Insert `··` (prettier/prettier)"
+##### 运行
+```
+yarn dev 或者 npm run dev
+```

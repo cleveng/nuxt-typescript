@@ -21,14 +21,14 @@ module.exports = {
   },
   extends: [
     '@nuxtjs/eslint-config-typescript',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
     'plugin:nuxt/recommended'
   ],
   plugins: ['vue', 'babel', 'prettier'],
   rules: {
     // 使用2个空格缩进
     indent: [
-      'error',
+      'off',
       2,
       {
         SwitchCase: 1,
@@ -155,15 +155,28 @@ module.exports = {
     // 允许使用v-html
     'vue/no-v-html': 0,
     // 禁用隐式的eval() 比如 setTimeout('alert();', 100)
-    'no-implied-eval': 'error'
+    'no-implied-eval': 'error',
+
+    // 格式化函数时， 函数名称或function关键字与开始参数之间允许有空格。
+    'space-before-function-paren': 0,
+    'vue/singleline-html-element-content-newline': 'off',
+    'vue/multiline-html-element-content-newline': 'off',
+    'linebreak-style': [0, 'error', 'windows'],
+    // 新函数换行
+    'lines-between-class-members': ['error', 'always', {
+      exceptAfterSingleLine: true
+    }],
+    //
+    'eol-last': 0,
+    'no-multiple-empty-lines': ['error', {
+      max: 1,
+      maxEOF: 0
+    }]
   },
 
   // 单元测试相关
   overrides: [{
-    files: [
-      '**/__tests__/*.{j,t}s?(x)',
-      '**/tests/unit/**/*.spec.{j,t}s?(x)'
-    ],
+    files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
     env: {
       jest: true
     }

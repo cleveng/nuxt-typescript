@@ -3,19 +3,40 @@
     "target": "ES2018",
     "module": "ESNext",
     "strict": false,
-    "moduleResolution": "Node",
-    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "moduleResolution": "node",
+    "lib": [
+      "ESNext",
+      "ESNext.AsyncIterable",
+      "DOM"
+    ],
     "esModuleInterop": true,
     "allowJs": true,
     "sourceMap": true,
     "noEmit": true,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
     },
-    "types": ["@nuxt/types", "@nuxt/content", "@nuxtjs/axios", "@nuxtjs/auth", "@types/node"]
+    "types": [
+      "@types/jquery",
+      "@nuxt/types",
+      "@nuxt/content",
+      "@nuxtjs/axios",
+      "@nuxtjs/auth-next",
+      "@types/node",
+      "notyf"
+    ]
   },
-  "exclude": ["node_modules", ".nuxt", "dist"]
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
 }

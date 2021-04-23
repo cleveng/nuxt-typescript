@@ -103,12 +103,14 @@ interface HostName {
 @Component
 export default class JFooter extends Vue {
   hostname: HostName = {
-    title: 'cakioe',
-    domain: 'cakioe.com',
-    icp: '20009363',
-    sicp: '44010602005778'
+    title: 'ca****',
+    domain: 'ca***.com',
+    icp: '200*******3',
+    sicp: '44********778'
   }
-  private govLink: string = 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode='
+
+  govLink: string = 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode='
+
   get getGovLink(): string {
     const { sicp } = this.hostname
     return this.govLink + `${sicp}`
